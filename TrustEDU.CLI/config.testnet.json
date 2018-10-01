@@ -1,3 +1,23 @@
 ﻿{
-
+  "ApplicationConfiguration": {
+    "Paths": {
+      "Chain": "Chain_{0}",
+      "Index": "Index_{0}"
+    },
+    "P2P": {
+      "Port": 20058,
+      "WsPort": 20059
+    },
+    "RPC": {
+      "Port": 20057,
+      "SslCert": "",
+      "SslCertPassword": ""
+    },
+    "UnlockWallet": {
+      "Path": "",
+      "Password": "",
+      "StartConsensus": false,
+      "IsActive": false
+    }
+  }
 }
