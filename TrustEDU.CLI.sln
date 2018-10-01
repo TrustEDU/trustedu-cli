@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrustEDU.CLI", "TrustEDU.CLI\TrustEDU.CLI.csproj", "{3EFFB5EA-2579-498E-9189-C1A33D96F866}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EFFB5EA-2579-498E-9189-C1A33D96F866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EFFB5EA-2579-498E-9189-C1A33D96F866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EFFB5EA-2579-498E-9189-C1A33D96F866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EFFB5EA-2579-498E-9189-C1A33D96F866}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D52BF12-9E5B-4C13-BD89-C5AECF0A162D}
+	EndGlobalSection
+EndGlobal
