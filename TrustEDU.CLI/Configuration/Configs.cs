@@ -1,28 +1,26 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using System;
+using Microsoft.Extensions.Configuration;
 
 namespace TrustEDU.CLI.Configuration
 {
     internal class Configs
     {
+        private static readonly Lazy<Configs> _configs = new Lazy<Configs>(() => new Configs());
         public PathConfigs Paths { get; }
         public P2PConfigs P2P { get; }
         public RPCConfigs RPC { get; }
         public UnlockWalletConfigs UnlockWallet { get; set; }
 
-        public static Configs Default { get; }
+        public static Configs Default => _configs.Value;
 
-        static Configs()
+        public Configs()
         {
-            IConfigurationSection section =
+            var section =
                 new ConfigurationBuilder()
                     .AddJsonFile("config.json")
                     .Build()
-                    .GetSection("ApplicationConfiguration");
-            Default = new Configs(section);
-        }
+                    .GetSection("Application");
 
-        public Configs(IConfigurationSection section)
-        {
             this.Paths = new PathConfigs(section.GetSection("Paths"));
             this.P2P = new P2PConfigs(section.GetSection("P2P"));
             this.RPC = new RPCConfigs(section.GetSection("RPC"));

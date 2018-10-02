@@ -1,6 +1,6 @@
 ﻿{
-  "ProtocolConfiguration": {
-    "Magic": 100588,
+  "Protocol": {
+    "Magic": 100518,
     "AddressVersion": 1,
     "SecondsPerBlock": 20,
     "StandbyValidators": [
@@ -20,10 +20,10 @@
       "seed5.trustedu.network:10058"
     ],
     "SystemFee": {
-      "Enrollment": 500,
-      "Issue": 250,
-      "Publish": 250,
-      "Register": 5000
+      "EnrollmentTransaction": 500,
+      "IssueTransaction": 250,
+      "PublishTransaction": 250,
+      "RegisterTransaction": 5000
     }
   }
 }
